@@ -45,7 +45,7 @@ The complete code is also available [here](https://github.com/karttur/machinelea
 
 ## Prerequisites
 
-To follow the post you need to a Python environment with numpy, pandas, sklearn (Scikit learn) and matplotlib installed.
+To follow the post you need a Python environment with numpy, pandas, sklearn (Scikit learn) and matplotlib installed.
 
 ## Module Skeleton
 
@@ -219,7 +219,7 @@ To run the function, call it from the \_\_main\_\_ section.
     regmods.LarsCVFeatureSelect()
 ```
 
-As noted above, the regression above uses the same data for fitting and predicting the target. You will get exactly the same results every time you run the model. In the next section you will use a pipeline for linking the feature selection and the regression, and if it works should also give exactly the same results. If you change the call to the function to request a plot, the plotted imag should be identical to the one below.
+As noted above, the regression uses the same data for fitting and predicting the target. You will get exactly the same results every time you run the model. In the next section you will use a pipeline for linking the feature selection and the regression, and if it works should also give exactly the same results. If you change the call to the function to request a plot, the plotted image should be identical to the one below.
 
 ```
     regmods.LarsCVFeatureSelect(True)
@@ -232,7 +232,7 @@ As noted above, the regression above uses the same data for fitting and predicti
 
 #### Pipeline feature selection and regression
 
-In the <span class='LarsCVFeatureSelectPipeline'></span> function below, the feature selection and the regression are linked together in a pipeline. The function illustrates and explains how this is done, and how retrieve the parameters and results from each step.
+In the <span class='LarsCVFeatureSelectPipeline'></span> function below, the feature selection and the regression are linked together in a pipeline. The function illustrates and explains how this is done, and how to retrieve the parameters and results from each step.
 
 ```
     def LarsCVFeatureSelectPipeline(self, plot=False):
@@ -254,7 +254,7 @@ In the <span class='LarsCVFeatureSelectPipeline'></span> function below, the fea
         #All the parameters from each step in the pipeline can be retrieved
         #Print the support (list of selected and discarded) features from the 'select' step (step = 0)
         print 'step 0 support',pipeline.steps[0][1].get_support()
-        #Each step can also be accessed using tis name
+        #Each step can also be accessed using its name
         print 'step select support', pipeline.named_steps['select'].get_support()
         #Create a dictionary from the original X columns and the boolean support list identifying the selected features
         selectD = dict(zip(self.columnsX,pipeline.named_steps['select'].get_support()))
@@ -332,7 +332,7 @@ In the two previous sections the threshold for selecting or discarding features 
         #Use the best estimator (cv.best_estimator) for retrieving the corresponding parameters in the pipleine
         #Print the support (list of selected and discarded) features from the 'select' step (step = 0)
         print 'step 0 support', cv.best_estimator_.steps[-2][1].get_support()
-        #Each step can also be accessed using tis name
+        #Each step can also be accessed using its name
         print 'step select support', cv.best_estimator_.named_steps['select'].get_support()
         #Create a dictionary from the original X columns and the boolean support list identifying the selected features
         selectD = dict(zip(self.columnsX, cv.best_estimator_.named_steps['select'].get_support() ))
@@ -458,7 +458,7 @@ Whether or not to print out the results for each model is determined by the para
 
 The function <span class='pydef'>PipelineCVRegressors</span> returns the overall best model results.
 
-To run the module using the <span class='pydef'>PipelineCVRegressors</span> function, you must define the regressors to use in the same manner that you did it in the previous posts. All the required functions are defined in the skeletion, and you just need to add and invoke the models in the \_\_main\_\_ section. The models I added below all have a built in cross validation for selecting features using cross validation. For three of the models I also added alternative settings for the hyper-parameter _alphas_. These alternatives will be evaluated by <span class='package'>GridSearchCV</span>. In the example below I also set _plot_ to False, and _verbose_ to 1. The best results, for each regressor, from the <span class='package'>GridSearchCV</span> will thus be printed, but not plotted.
+To run the module using the <span class='pydef'>PipelineCVRegressors</span> function, you must define the regressors to use in the same manner that you did it in the previous posts. All the required functions are defined in the skeletion, and you just need to add and invoke the models in the \_\_main\_\_ section. The models I added below all have a built in cross validation for selecting features using cross validation. For three of the models I also added alternative settings for the hyper-parameter _alphas_. And for 'ElasticNetCV' I added a second set of options, for the parameter setting of _l1_ratio_ .These alternatives will be evaluated by <span class='package'>GridSearchCV</span>. In the example below I also set _plot_ to False, and _verbose_ to 1. The best results, for each regressor, from the <span class='package'>GridSearchCV</span> will thus be printed, but not plotted.
 
 ```
     modD = {}

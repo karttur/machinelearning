@@ -294,7 +294,7 @@ Agglomeration aims at reducing the dimensionality (number of columns) of the ind
 
 The function resets the class _X_ (_self.X_) variable, and all subsequent processing (regression modelling) will use the clustered data instead of the original data. Your models will then have fewer independent features to sieve through. The modelling will thus be faster, but with only a small loss in predictive power, and without redundancy among the independent features.
 
-When calling the <span class='pydef'>WardClustering</span> function you have to give the number of clusters you want to merge the original into. To use the function, call it from the \_\_main\_\_ section.
+When calling the <span class='pydef'>WardClustering</span> function you have to give the number of clusters you want to merge the original dataset into. To use the function, call it from the \_\_main\_\_ section.
 
 ```
     nClusters = 5
@@ -339,7 +339,7 @@ What is needed for tuning the optimal number of clusters is an estimator (regres
 * sends the clustered _X_ dataset to an estimator, and
 * evaluates the results from the estimator.
 
-In Scikit learn this can be setup using a pipeline (<span class='package'>Pipeline</span>) and <span class='package'>GridSearchCV</span>. <span class='package'>Pipeline</span> defines the functions to link, and <span class='package'>GridSearchCV</span> defines the cluster sizes to test and iterates the process. The example below uses the the [Bayesian linear regressor](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.BayesianRidge.html) as the estimator, and is taken from a [Scikit learn page on Feature agglomeration](http://scikit-learn.org/stable/auto_examples/cluster/plot_feature_agglomeration_vs_univariate_selection.html).
+In Scikit learn this can be setup using a pipeline (<span class='package'>Pipeline</span>) and <span class='package'>GridSearchCV</span>. <span class='package'>Pipeline</span> defines the functions to link, and <span class='package'>GridSearchCV</span> defines the cluster sizes to test and iterates the process. The example below uses the [Bayesian linear regressor](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.BayesianRidge.html) as the estimator, and is taken from a [Scikit learn page on Feature agglomeration](http://scikit-learn.org/stable/auto_examples/cluster/plot_feature_agglomeration_vs_univariate_selection.html).
 
 ```
     def TuneWardClustering(self, nClustersL, kfolds=2):
@@ -360,7 +360,7 @@ In Scikit learn this can be setup using a pipeline (<span class='package'>Pipeli
         return (clf.best_params_['ward__n_clusters'])
 ```
 
-The function <span class='pydef'>TuneWardClustering</span> requires a list (_nClustersL_) containing the sizes of the clusters you want to test (for example, to test clustering the X data to between 4 and 10 cluster, the list would be [4,5,6,7,8,9,10]). You can also set the number of folds (_kfolds_) to use in the cross validation. The function returns a single number, the number of clusters that resulted in the highest score of the _criterion_ used in <span class='package'>GridSearchCV</span>. If you do not set a _criterion_ the inbuilt default will be used.
+The function <span class='pydef'>TuneWardClustering</span> requires a list (_nClustersL_) containing the sizes of the clusters you want to test (for example, to test clustering the X data to between 4 and 10 cluster, the list would be [4,5,6,7,8,9,10]). You can also set the number of folds (_kfolds_) to use in the cross validation. The function returns a single number, the number of clusters that resulted in the highest score.
 
 
 You then also need to add the reporting function for the results of the pipeline clustering.

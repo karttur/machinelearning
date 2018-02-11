@@ -47,17 +47,17 @@ The complete code is also available [here](https://github.com/karttur/machinelea
 
 ## Prerequisites
 
-To follow this post you need to have a Python environment with numpy, pandas and sklearn (Scikit learn) installed. The most convenient way to get these Python packages is to install [Anaconda](https://anaconda.org). To write and test the code, an Integrated Development Environment (IDE) like [Eclipse](http://www.eclipse.org) is the best alternative. Other posts in this blog describe how to [install Anaconda](https://karttur.github.io/setup-ide/setup-ide/install-anaconda/) and how to [Install Eclipse for Python Development using Anaconda](https://karttur.github.io/setup-ide/setup-ide/install-eclipse/). The rest of this post will assume that you have all the Python packages installed, and an IDE for writing the code.
+To follow this post you need to have a Python environment with numpy, Pandas and sklearn (Scikit learn) installed. The most convenient way to get these Python packages is to install [Anaconda](https://anaconda.org). To write and test the code, an Integrated Development Environment (IDE) like [Eclipse](http://www.eclipse.org) is the best alternative. Other posts in this blog describe how to [install Anaconda](https://karttur.github.io/setup-ide/setup-ide/install-anaconda/) and how to [Install Eclipse for Python Development using Anaconda](https://karttur.github.io/setup-ide/setup-ide/install-eclipse/). The rest of this post will assume that you have all the Python packages installed, and an IDE for writing the code.
 
 ## Python environment setup
 
-Start <span class='app'>Eclipse</span> (or another IDE with a python interpreter) and either create a new PyDev project with a new PyDev Package, or create a PyDev package within an existing project. Copy and paste the package imports that you are going to use.
+Start <span class='app'>Eclipse</span> (or another IDE with a python interpreter) and either create a new PyDev project with a new PyDev Package, or create a PyDev package within an existing project. The create a PyDev module (.py file). Copy and paste the package imports below to the top of the PyDev module.
 
 ```
 #numpy: for handling 2d (array) data
 import numpy as np
 #Pandas: for reading and organizing the data
-import pandas as pd
+import Pandas as pd
 #Scikit learn (sklearn) machinelarning package (selected sub-packges and modules)
 from sklearn import model_selection
 from sklearn.linear_model import LinearRegression
@@ -68,11 +68,11 @@ Below the imports, create a new class called <span class='pydef'>RegressionModel
 
 ```
 class RegressionModel:
-    \'\'\'Machinelearning using linear regression
-    \'\'\'
+    '''Machinelearning using linear regression
+    '''
     def __init__(self,columns,target):
-        \'\'\'creates an empty instance of RegressionMode
-        \'\'\'    
+        '''creates an empty instance of RegressionMode
+        '''   
         self.columns = columns
         self.target = target
 ```
@@ -87,7 +87,7 @@ if __name__ == ('__main__'):
     regmod = RegressionModel(columns,target)
 ```
 
-You now a skeleton python module, and the next thing you need is an import function to get the dataset to model using machinelearning.
+You now have a skeleton python module, and the next thing you need is an import function to get the dataset to model using machinelearning.
 
 ## Get dataset
 
@@ -95,7 +95,7 @@ You need a dataset with continuous variables (rather than classes), and in this 
 
 ### Get the dataset from sklearn
 
-As the housing dataset is used in the official manuals of Scikit learn, it is available as a module in sklearn. To get it, just import the sklearn package for  <span class='pydef'>datasets</span>, and then you have access to the dataset. If you use this route, you have to create the pandas dataframe object that you are going to use for plotting the data after importing the dataset. The function below imports the housing dataset, and creates a pandas dataframe. Copy and paste the function as part of the class <span class='pydef'>RegressionModel</span>.
+As the housing dataset is used in the official manuals of Scikit learn, it is available as a module in sklearn. To get it, just import the sklearn package for  <span class='pydef'>datasets</span>, and then you have access to the dataset. If you use this route, you have to create the Pandas dataframe object that you are going to use for plotting the data after importing the dataset. The function below imports the housing dataset, and creates a Pandas dataframe. Copy and paste the function as part of the class <span class='pydef'>RegressionModel</span>.
 
 ```
     def ImportSklearnDataset(self):
@@ -104,7 +104,7 @@ As the housing dataset is used in the official manuals of Scikit learn, it is av
         #Load the Boston dataset from the datasets package library
         dataset = datasets.load_boston()        
         #The sklearn organised dataset divides the dataset between the independent variables ("data") and the dependent variable ("target").
-        #To create a pandas dataframe you have to stack them when creating the pandas dataframe
+        #To create a Pandas dataframe you have to stack them when creating the Pandas dataframe
         self.dataframe =  pd.DataFrame(data=np.column_stack((dataset.data,dataset.target)), columns=self.columns)
 ```
 
@@ -121,7 +121,7 @@ You can also load the data directly from the internet by using Pandas and the ur
 
 You can also [download the dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/housing/), and use the function above (<span class='pydef'>ImportUrlDataset</span>) but instead of the url just give the local path on your machine to where you saved the downloaded dataset.
 
-On the download page you also find the document "housing.names", that list the names as given in the variable _columns_ in the code, and what they mean (for example: MEDV = median value).
+On the download page you also find the document "housing.names", that lists the names as given in the variable _columns_ in the code, and what they mean (for example: MEDV = median value).
 
 ### Calling your import function
 
@@ -149,7 +149,7 @@ To see the complete code so far, click the button.
 #numpy: for handling 2d (array) data
 import numpy as np
 #Pandas: for reading and organizing the data
-import pandas as pd
+import Pandas as pd
 #Scikit learn (sklearn) machinelarning package (selected sub-packges and modules)
 from sklearn import model_selection
 from sklearn.linear_model import LinearRegression
@@ -170,7 +170,7 @@ class RegressionModel:
         #Load the Boston dataset from the datasets package library
         dataset = datasets.load_boston()        
         #The sklearn organised dataset divides the dataset between the independent variables ("data") and the dependent variable ("target").
-        #To create a pandas dataframe you have to stack them
+        #To create a Pandas dataframe you have to stack them
         self.dataframe =  pd.DataFrame(data=np.column_stack((dataset.data,dataset.target)), columns=self.columns)
 
     def ImportUrlDataset(self,url):    
@@ -265,7 +265,7 @@ The function calculates the rows (nrows) and columns (ncols) for displaying box-
 
 If you retrieved the housing dataset from the sklearn library, it was already divided between independent variables and the dependent variable (MEDV in this dataset). If you imported the data from the internet, or as a local file, all the data came as a single matrix. When you created the Pandas dataframe, you linked each feature to a column with a name.
 
-To use sklearn for modelling, you must tell sklearn which data represent the dependent and independent features. This can be done in different ways, but you will create a generic function (ExtractDf) that will create two numpy matrices, one for the independent (co-variates) and one for the dependent (target) variables. Following the standard syntax of sklearn examples, we will call the former _X_ and the latter _y_.
+To use sklearn for modelling, you must tell sklearn which data represent the dependent and independent features. This can be done in different ways, but you will create a generic function (<span class='pydef'>ExtractDf</span>) that will create two numpy matrices, one for the independent (co-variates) and one for the dependent (target) variables. Following the standard syntax of sklearn examples, we will call the former _X_ and the latter _y_.
 
 ```
     def ExtractDf(self,target,omitL = []):
@@ -279,7 +279,7 @@ To use sklearn for modelling, you must tell sklearn which data represent the dep
         self.X = self.dataframe[self.columnsX]
 ```
 
-The function <span class='pydef'>ExtractDf</span> extracts the _target_ column, and then you can additionally add a list of other features that are included in the dataframe, but that you do not want to use in the modeling. To extract the target (_y_) and the co-variates (_X_) add the following lines to the end of the \_\_main\_\_ section. The three _print_ statements are just forconfirming that the extraction went OK: You can skip them, or delete them after confirming that it worked as expected.
+The function <span class='pydef'>ExtractDf</span> extracts the _target_ column, and then you can additionally add a list of other features that are included in the dataframe, but that you do not want to use in the modeling. To extract the target (_y_) and the co-variates (_X_) add the following lines to the end of the \_\_main\_\_ section. The three _print_ statements are just for confirming that the extraction went OK. You can skip, or delete, them after confirming that it worked as expected.
 
 ```
     target ='MEDV'
@@ -306,7 +306,7 @@ If it does not work, you can get the code written thus far by clicking the butto
 {% raw %}
 import numpy as np
 #Pandas: for reading and organizing the data
-import pandas as pd
+import Pandas as pd
 #Scikit learn (sklearn) machinelarning package (selected sub-packges and modules)
 from sklearn import model_selection
 from sklearn.linear_model import LinearRegression
@@ -330,7 +330,7 @@ class RegressionModel:
         #Load the Boston dataset from the datasets package library
         dataset = datasets.load_boston()        
         #The sklearn organised dataset divides the dataset between the independent variables ("data") and the dependent variable ("target").
-        #To create a pandas dataframe you have to stack them
+        #To create a Pandas dataframe you have to stack them
         self.dataframe =  pd.DataFrame(data=np.column_stack((dataset.data,dataset.target)), columns=self.columns)
 
     def ImportUrlDataset(self,url):    
@@ -423,7 +423,11 @@ The Scikit learn (sklearn) package can be used for ordinary regressions (without
             self.PlotRegr(self.y, predict, title, color='maroon')
 ```
 
-The regression above takes all the data and fits a model, then predicts the independent variable (_y_) from the regression. This is a naive approach, and does not perform any independent calibration and validation. It the variable _plot_ is set to True, the function assembles a title, and calls <span class='pydef'>PlotRegr</span>. Calling <span class='pydef'>PlotRegr</span> requires the observed and predicted numpy arrays, and the title; additionally a color can be defined. If no color is given the scatter plot of each pair observed-predicted is defaulted to black. In the example above it is given as _maroon_.
+The regression above takes all the data and fits a model, then predicts the independent variable (_y_) from the regression. This is a naive approach, and does not perform any independent calibration and validation. It the variable _plot_ is set to True, the function assembles a title, and calls <span class='pydef'>PlotRegr</span>. Calling <span class='pydef'>PlotRegr</span> requires the observed and predicted numpy arrays, and the title; additionally a color can be defined. If no color is given the scatter plot of each pair observed-predicted is defaulted to black. In the example above it is given as _maroon_. The plot function is called from within <span class='pydef'>MultiRegression</span>. To test the regression you only need to add a single line at the end of the \_\_main\_\_ section.
+
+```
+    regmod.MultiRegression()
+```
 
 ## Regression model
 
@@ -472,7 +476,7 @@ Instead of hardcoding the fraction of the data that is going to be used for test
 
 ##  Cross validation iterators
 
-The Regression model in the previous section is sensitive to drifts or biases in data. For example, if you sample house prices over time, the prices might drift upwards or downwards unrelated to your features (e.g. by inflation or deflation). Or perhaps the data was sampled from north to south, and for reasons outside the co-variables (another name for the independent data features) the prices are increasing in one of the directions. Under such circumstances it is not good to just split the dataset in two parts. You could solve that by a random split, but you might still be at risk of selecting a training dataset that statistically differs from the test dataset. The way to solve that, and improve your machinelearning model, is to iteratively split your dataset and cross validate. In the jargon of machinelearning this is called folding. It is easy enough to implement in Scikit learn with the functions <span class='pydef'>KFold</span> and  <span class='pydef'>cross_val_predict</span>, both in the package <span class='package'>model_selection</span> that you already imported at the beginning.
+The Regression model in the previous section is sensitive to drifts or biases in data. For example, if you sample house prices over time, the prices might drift upwards or downwards unrelated to your features (e.g. by inflation or deflation). Or perhaps the data was sampled from north to south, and for reasons outside the co-variates (another name for the independent data features) the prices are increasing in one of the directions. Under such circumstances it is not good to just split the dataset in two parts. You could solve that by a random split (as Scikit learn does), but you might still be at risk of selecting a training dataset that statistically differs from the test dataset. The way to solve that, and improve your machine learning model, is to iteratively split your dataset and cross validate. In the jargon of machine learning this is called folding. It is easy enough to implement in Scikit learn with the functions <span class='pydef'>KFold</span> and  <span class='pydef'>cross_val_predict</span>, both in the package <span class='package'>model_selection</span> that you already imported at the beginning.
 
 In the function <span class='pydef'>KFold</span> , you set the number of folds (iterations) as _n_splits_
 ```
@@ -538,7 +542,7 @@ The complete code of the module that you created in this post is hidden under th
 #numpy: for handling 2d (array) data
 import numpy as np
 #Pandas: for reading and organizing the data
-import pandas as pd
+import Pandas as pd
 #Scikit learn (sklearn) machinelarning package (selected sub-packges and modules)
 from sklearn import model_selection
 from sklearn.linear_model import LinearRegression
@@ -563,7 +567,7 @@ class RegressionModel:
         #Load the Boston dataset from the datasets package library
         dataset = datasets.load_boston()        
         #The sklearn organised dataset divides the dataset between the independent variables ("data") and the dependent variable ("target").
-        #To create a pandas dataframe you have to stack them
+        #To create a Pandas dataframe you have to stack them
         self.dataframe =  pd.DataFrame(data=np.column_stack((dataset.data,dataset.target)), columns=self.columns)
 
     def ImportUrlDataset(self,url):    
@@ -710,6 +714,6 @@ if \_\_name\_\_ == (\'\_\_main\_\_\'):
 
 [Train/Test Split and Cross Validation in Python](https://towardsdatascience.com/train-test-split-and-cross-validation-in-python-80b61beca4b6) by Adi Bronshtein
 
-[Join And Merge Pandas Dataframe](https://chrisalbon.com/python/data_wrangling/pandas_join_merge_dataframe/)
+[Join And Merge Pandas Dataframe](https://chrisalbon.com/python/data_wrangling/Pandas_join_merge_dataframe/)
 
 [Completed python module](https://github.com/karttur/machinelearning/tree/gh-pages/docs/) on GitHub.

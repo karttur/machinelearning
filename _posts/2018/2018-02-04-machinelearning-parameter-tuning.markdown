@@ -343,7 +343,7 @@ As I wanted to try both randomized and exhaustive tuning, I opted for creating a
             regmods.modD[name] = tunedModD
 ```
 
-Without setting any parameters, the tuning search for each model is defaulted to use half of the dataset (parameter _fraction=0.5) for the tuning, 6 iterations (parameter _nIterSearch_=6), and to print out the top 3 results (parameter _n_top_=3). For each regressor, the hyper-parameters for the best tuning are retrieved. If the regressor model had any initial hyper-parameters set in the _modD_ dictionary they are added, and the tuned hyper-parameters are then set as the parameter+value pairs in _modD_.
+Without setting any parameters, the tuning search for each model is defaulted to use half of the dataset (parameter _fraction=0.5) for the tuning, 6 iterations (parameter _nIterSearch_=6), and to print out the top 3 results (parameter _n_top_=3). For each regressor, the hyper-parameters for the best tuning are retrieved. If the regressor model had any initial hyper-parameters set in the _modD_ dictionary they are added, and the tuned hyper-parameters are then set as parameter+value pairs in _modD_.
 
 The <span class='pydef'>RandomTuning</span> function uses the Scikit learn randomized tuning function <span class='package'>RandomizedSearchCV</span>, that you must add to the imports at the beginning of the module. Then you will also need to import functions for creating ranges of randomized numbers.
 
@@ -362,7 +362,7 @@ If you want to increase the search iterations to 12, and the print out the top 6
 regmods.RandomTuning(0.5,12,6)
 ```
 
-Then you have to create the values for the parameter _param_distributions_ used in <span class='pydef'>RandomTuning</span> (_param_distributions=self.paramDist_). The values to send to _param_distributions_ are defined in the variable _self.paramDist_, and defines both which hyper-parameters to tune, and what values each hyper-parameter is allowed to take. The only parameter (in _self.paramDist_) that is the same across all regressors is the _criterion_ to use for evaluate the performance of each combination of hyper-parameters in the tuning search. You can either set the _criterion_, or accept the the default. You have to look at the individual Scikit learn pages to get a grip on the hyper-parameters you want to tune, and what ranges/alternatives you can/want to set. The principle for setting the ranges/parameters differs for the different types of parameters.
+Then you have to create the values for the parameter _param_distributions_ used in <span class='pydef'>RandomTuning</span> (_param_distributions=self.paramDist_). The values to send to _param_distributions_ are defined in the variable _self.paramDist_, and defines both which hyper-parameters to tune, and what values each hyper-parameter is allowed to take. You have to look at the individual Scikit learn pages to get a grip on the hyper-parameters you want to tune, and what ranges/alternatives you can/want to set. The principle for setting the ranges/parameters differs for the different types of parameters.
 
 * Integers: sp_randint(min, max) or predefined set (i, j, k, ...)
 * Real: sp_randreal(min, max) or predefined set (i.j, k.l, m.n, ...)
@@ -532,7 +532,7 @@ The model setup, using the _modD_ dictionary, allows the tuned hyper-parameters 
 
 ### Exhaustive tuning
 
-The exhaustive tuning (or exhaustive grid search) is provided by the Scikit learn function <span class='package'>GridSearchCV</span>. The function exhaustively generates candidates from a grid of hyper-parameter values specified with the _param_grid_ parameter. Compared to the randomized grid search, you can specify the search space in more detail, but you need to narrow the search space down as the processes otherwise will take long. If your ranodmized tuning indicates that a hyper-parameter value can be set to a constant value that is not the default value, it is better to define that particular hyper-parameter in the initial model definition (_modD_) and omit it from the tuning search. If it is the default value of the hyper-parameter that can be held constant, all you have to do is to omit it from tuning search.
+The exhaustive tuning (or exhaustive grid search) is provided by the Scikit learn function <span class='package'>GridSearchCV</span>. The function exhaustively generates candidates from a grid of hyper-parameter values specified with the _param_grid_ parameter. Compared to the randomized grid search, you can specify the search space in more detail, but you need to narrow the search space down as the processes otherwise will take long. If your randomized tuning indicates that a hyper-parameter value can be set to a constant value that is not the default value, it is better to define that particular hyper-parameter in the initial model definition (_modD_) and omit it from the tuning search. If it is the default value of the hyper-parameter that can be held constant, all you have to do is to omit it from tuning search.
 
 Import the <span class='package'>GridSearchCV</span> at the beginning of the module.
 

@@ -292,7 +292,7 @@ Test how an ordinary least square (OLS) regression performs with the selected fe
     regmods.RegrModTrainTest()
 ```
 
-Run the module. All the models you defined in the \_\_main\_\_ section will go into the loop in <span class='RegrModTrainTest'></span>
+Run the module. All the models you defined in the \_\_main\_\_ section will go into the loop in <span class='pydef'>RegrModTrainTest</span>.
 ```
 for m in self.models:
     #Retrieve the model name and the model itself
@@ -300,7 +300,7 @@ for m in self.models:
     #Remove the features listed in the modelDiscarD
     self.ExtractDf(self.modelDiscardD[name])
 ```
-and the function <span class='pydef'>ExtractDf</span> extracts only the selected features for the class variable _X_ (_self.X_) used in the actual regression.
+The function <span class='pydef'>ExtractDf</span> extracts only the selected features for the class variable _X_ (_self.X_) used in the actual regression.
 
 You can compare the results, shown in the figure below, with the results when using all the features (the first figure in the [previous post](../machinelearning-algorithms/index.html#ordinary-least-square-ols-regression)).
 
@@ -350,7 +350,7 @@ Then create the function <span class='pydef'>UnivariateSelector</span>.
             self.modelDiscardD[key] = discardL
 ```
 
-The function <span class='pydef'>UnivariateSelector</span> requires that you give the number of features you want to select, there is no default number set. To try <span class='package'>UnivariateSelector</span> out, add the call to the function after the call to <span class='pydef'>VarianceSelector</span> and comment out the latter. The code snippet below shows the last parts of \_\_main\_\_ section, with <span class='pydef'>KBestSelector</span> set to select 2 features.
+The function <span class='pydef'>UnivariateSelector</span> requires that you give the number of features you want to select, there is no default number set. To try <span class='package'>UnivariateSelector</span> out, add the call to the function after the call to <span class='pydef'>VarianceSelector</span> and comment out the latter. The code snippet below shows the last parts of \_\_main\_\_ section, with <span class='pydef'>UnivariateSelector</span> set to select 2 features.
 
 ```
     #regmods.VarianceSelector(0.1)

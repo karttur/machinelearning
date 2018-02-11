@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Machine learning 2 - algorithms
+title: Machine learning 2 - Algorithms
 modified: '2018-01-31 12:29'
 categories: blog
 excerpt: Introduction to machine learning algorithms in Python
