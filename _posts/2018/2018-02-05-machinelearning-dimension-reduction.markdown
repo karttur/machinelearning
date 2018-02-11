@@ -43,6 +43,8 @@ In earlier posts in this series on machine learning, you have applied both linea
 
 You can copy and paste the code in the post, but you might have to edit some parts: indentations does not always line up, quotations marks can be of different kinds and are not always correct when published/printed as html text, and the same also happens with underscores and slashes.
 
+The complete code is also available [here](https://github.com/karttur/machinelearning/tree/gh-pages/docs/).
+
 ## Prerequistits
 
 The prerequisites are the same as in the previous posts in this series: a Python environment with numpy, pandas, sklearn (Scikit learn) and matplotlib installed.
@@ -497,6 +499,8 @@ By default <span class='pydef'>PCAdecompose</span> reduces the input array to th
   <figcaption>Comparison of predictions from various regressors after dimension reduction with PCA (3 eigen-vectors used as independent variable) and randomized hyper-parameter tuning.</figcaption>
 </figure>
 
+The complete code of the module that you created in this post is available at [GitHub](https://github.com/karttur/machinelearning/tree/gh-pages/docs/).
+
 ## Resources
 
 [Unsupervised dimensionality reduction](http://scikit-learn.org/stable/modules/unsupervised_reduction.html), Scikit learn.
@@ -506,3 +510,5 @@ By default <span class='pydef'>PCAdecompose</span> reduces the input array to th
 [Decomposing signals in components](http://scikit-learn.org/stable/modules/decomposition.html), Scikit learn.
 
 [PCA](http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html), Scikit learn.
+
+[Completed python module](https://github.com/karttur/machinelearning/tree/gh-pages/docs/) on GitHub.

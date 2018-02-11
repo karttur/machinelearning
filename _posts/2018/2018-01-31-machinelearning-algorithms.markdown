@@ -59,7 +59,9 @@ share: true
 
 In the [previous post](../machinelearning-linreg/) we built a Python module (.py) file in <span class='app'>Eclipse</span> for machine learning using linear regression. In this post you will look at other algorithms for machine learning and predicting continuous phenomena using regressions. If instead you are looking for predicting crisp classes from continuous co-variates, Jason Brownlee's post on [Spot-Check Regression Machine Learning Algorithms in Python with scikit-learn](https://machinelearningmastery.com/spot-check-regression-machine-learning-algorithms-python-scikit-learn/) is the place to start.
 
-You can copy and paste the code in the post, but you might have to edit some parts: indentations does not always line up, quotations marks can be of different kinds and are not always correct when published/printed as html text, and the same also happens with underscores and slashes. 
+You can copy and paste the code in the post, but you might have to edit some parts: indentations does not always line up, quotations marks can be of different kinds and are not always correct when published/printed as html text, and the same also happens with underscores and slashes.
+
+The complete code is also available [here](https://github.com/karttur/machinelearning/tree/gh-pages/docs/).
 
 ## Prerequisites
 
@@ -500,7 +502,7 @@ And then comment out the function <span class='pydef'>RegrModTrainTest</span> an
     regmods.RegrModKFold()
 ```
 
-The complete module is available under the button below.
+The complete module is hidden under the button below, and available at [GitHub](https://github.com/karttur/machinelearning/tree/gh-pages/docs/).
 
 <button id= "toggle02btn" onclick="hiddencode('toggle02')">Hide/Show complete module</button>
 
@@ -655,3 +657,5 @@ if \_\_name\_\_ == ('\_\_main\_\_'):
 [Spot-Check Regression Machine Learning Algorithms in Python with scikit-learn](https://machinelearningmastery.com/spot-check-regression-machine-learning-algorithms-python-scikit-learn/) by Jason Brownlee
 
 [Train/Test Split and Cross Validation in Python](https://towardsdatascience.com/train-test-split-and-cross-validation-in-python-80b61beca4b6) by Adi Bronshtein
+
+[Completed python module](https://github.com/karttur/machinelearning/tree/gh-pages/docs/) on GitHub.

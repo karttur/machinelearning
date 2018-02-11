@@ -89,15 +89,15 @@ from sklearn.svm import SVR
 from sklearn.metrics import mean_squared_error, r2_score
 
 import matplotlib
-matplotlib.use('TkAgg')
+matplotlib.use(\'TkAgg\')
 from matplotlib import pyplot
 
 class RegressionModels:
-    '''Machinelearning using regression models
-    '''
+    \'\'\'Machinelearning using regression models
+    \'\'\'
     def \_\_init\_\_(self, columns,target):
-        '''creates an instance of RegressionModels
-        '''
+        \'\'\'creates an instance of RegressionModels
+        \'\'\'
         self.columns = columns
         self.target = target
         #create an empty dictionary for features to be discarded by each model
@@ -185,7 +185,7 @@ class RegressionModels:
             name,mod = m
             #Remove the features listed in the modelDiscarD
             self.ExtractDf(self.modelDiscardD[name])
-            #cross_val_predict returns an array of the same size as `y` where each entry
+            #cross_val_predict returns an array of the same size as \`y\` where each entry
             #is a prediction obtained by cross validation:
             predict = model_selection.cross_val_predict(mod, self.X, self.y, cv=kfold)
             #to retriece regressions scores, use cross_val_score
@@ -729,6 +729,8 @@ Parameters: {'min_samples_split': 4, 'n_estimators': 20, 'bootstrap': True, 'min
   <figcaption>Hyper-parameter tuned prediction using random forest regression: left, dataset split into training and test subsets; right, folded cross validation.</figcaption>
 </figure>
 
+The complete Python module is availabe on [Karttur's repository on Github](https://github.com/karttur/machinelearning/tree/gh-pages/docs/).
+
 ## Resources
 
 [Tuning the hyper-parameters of an estimator](http://scikit-learn.org/stable/modules/grid_search.html), Scikit learn.
@@ -738,3 +740,5 @@ Parameters: {'min_samples_split': 4, 'n_estimators': 20, 'bootstrap': True, 'min
 [GridSearchCV](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html), Scikit learn.
 
 [What is the Difference Between a Parameter and a Hyperparameter?](https://machinelearningmastery.com/difference-between-a-parameter-and-a-hyperparameter/) by Jason Brownlee
+
+[Completed python module](https://github.com/karttur/machinelearning/tree/gh-pages/docs/) on GitHub.

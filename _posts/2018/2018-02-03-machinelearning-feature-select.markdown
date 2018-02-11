@@ -40,6 +40,8 @@ Previous posts in this series on machinelearning cover an [introduction to machi
 
 You can copy and paste the code in the post, but you might have to edit some parts: indentations does not always line up, quotations marks can be of different kinds and are not always correct when published/printed as html text, and the same also happens with underscores and slashes.
 
+The complete code is also available [here](https://github.com/karttur/machinelearning/tree/gh-pages/docs/).
+
 ## Prerequisites
 
 The prerequisites are the same as in the previous posts in this series: a Python environment with numpy, pandas, sklearn (Scikit learn) and matplotlib installed.
@@ -431,8 +433,12 @@ Add the models you want to test and then call <span class='pydef'>RFESelector</s
   <figcaption>Comparison of predictions from various regressors after model specific feature selection (5 selected features for each model).</figcaption>
 </figure>
 
+The complete Python module is availabe on [Karttur's repository on Github](https://github.com/karttur/machinelearning/tree/gh-pages/docs/).
+
 ## Resources
 
 [Scikit learn page on Feature Selection](http://scikit-learn.org/stable/modules/feature_selection.html)
 
 [Feature Selection in Python with Scikit-Learn](https://machinelearningmastery.com/feature-selection-in-python-with-scikit-learn/) by Jason Brownlee
+
+[Completed python module](https://github.com/karttur/machinelearning/tree/gh-pages/docs/) on GitHub.

@@ -43,6 +43,8 @@ When I use Python for machinelearning I tend to use the machinelearning package 
 
 You can copy and paste the code in the post, but you might have to edit some parts: indentations does not always line up, quotations marks can be of different kinds and are not always correct when published/printed as html text, and the same also happens with underscores and slashes.
 
+The complete code is also available [here](https://github.com/karttur/machinelearning/tree/gh-pages/docs/).
+
 ## Prerequisites
 
 To follow this post you need to have a Python environment with numpy, pandas and sklearn (Scikit learn) installed. The most convenient way to get these Python packages is to install [Anaconda](https://anaconda.org). To write and test the code, an Integrated Development Environment (IDE) like [Eclipse](http://www.eclipse.org) is the best alternative. Other posts in this blog describe how to [install Anaconda](https://karttur.github.io/setup-ide/setup-ide/install-anaconda/) and how to [Install Eclipse for Python Development using Anaconda](https://karttur.github.io/setup-ide/setup-ide/install-eclipse/). The rest of this post will assume that you have all the Python packages installed, and an IDE for writing the code.
@@ -525,7 +527,7 @@ The complete function for implementing an iterative cross validation using folds
 <figcaption> {{ site.data.images[page.figure4].caption }} </figcaption>
 </figure>
 
-The complete code of the module that you created in this post is hidden under the button below.
+The complete code of the module that you created in this post is hidden under the button below, and available at [GitHub](https://github.com/karttur/machinelearning/tree/gh-pages/docs/).
 
 <button id= "toggle03btn" onclick="hiddencode('toggle03')">Hide/Show complete module</button>
 
@@ -709,3 +711,5 @@ if \_\_name\_\_ == (\'\_\_main\_\_\'):
 [Train/Test Split and Cross Validation in Python](https://towardsdatascience.com/train-test-split-and-cross-validation-in-python-80b61beca4b6) by Adi Bronshtein
 
 [Join And Merge Pandas Dataframe](https://chrisalbon.com/python/data_wrangling/pandas_join_merge_dataframe/)
+
+[Completed python module](https://github.com/karttur/machinelearning/tree/gh-pages/docs/) on GitHub.
