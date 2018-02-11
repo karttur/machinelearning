@@ -33,13 +33,13 @@ class RegressionModels:
         self.modD = {}
         self.modelSpearateX = False
 
-    def _ImportUrlDataset(self,url):    
+    def ImportUrlDataset(self,url):    
         self.dataframe = pd.read_csv(url, delim_whitespace=True, names=self.columns)
 
-    def _SetDf(self,df):
+    def SetDf(self,df):
         self.dataframe = df
         
-    def _ExtractDf(self,omitL):
+    def ExtractDf(self,omitL):
         #extract the target column as y
         self.y = self.dataframe[self.target]
         #appeld the target to the list of features to be omitted
@@ -49,95 +49,7 @@ class RegressionModels:
         #extract the data columns as X
         self.X = self.dataframe[self.columnsX]
         
-    def _RemoveNan(self, omitL=[]):
-        '''Remove Nan from dataframe (self.df)
-        '''
-        if self.dataframe.isnull().any().any():
-            print 'Warning: There are null values in your dataframe\n    removing null records'
-        #In some cases the pd.dropna is not sufficient for removing Nan
-        #it is safer to use numpy
-        columns = list(self.dataframe)
-        arr = self.dataframe.values
-        arr = arr[~np.isnan(arr).any(axis=1)]        
-        self.dataframe = pd.DataFrame(data=arr, columns=columns)
-        if self.dataframe.isnull().any().any():
-            exit('There are null values in your dataframe that can not be removed')
-        #reset X and y
-        self.ExtractDf(omitL)
-    
-    def _SliceColumns(self,n):
-        arr = self.dataframe.values
-        columns = list(self.dataframe)
-        #pop the target
-        target = columns.pop(0)
-        
-        #Extract the target data
-        y = arr[:,0]
-        #Extract the data array
-        X = arr[:,1:]
-        Xd = X[:,::n] 
-        columns = np.array(columns[1:arr.shape[1]])
-        columns = columns[::n].tolist()
- 
-        columns.insert(0, target)
-        self.columns = columns
-        self.dataframe =  pd.DataFrame(data=np.column_stack((y,Xd)), columns=self.columns)
-        #reset X and y
-        self.ExtractDf([])
-
-    def _SumColumns(self,n,targetCol=0,omitL=[]):
-        '''Summarizes n columns to a new column and reduces the nr of columns,
-        '''
-        print 'Reducing X dimensionality by summing every %(n)d columns' %{'n':n}
-        arr = self.dataframe.values
-        columns = list(self.dataframe)
-        #pop the target
-        target = columns.pop(0)
-        y = arr[:,0]
-        #Extract the data array
-        X = arr[:,1:]
-        if X.shape[1] % n:
-            for m in range(n):
-                if not (X.shape[1]-m) % n:
-                    skip = m
-                    break
-            X = X[:,skip:]    
-            columns = columns[skip:]
-        rows = X.shape[0]
-        Xd = X.reshape(rows, -1, n).mean(axis=2)
-        columns = columns[::n]
-        columns.insert(0, target)
-        self.columns = columns
-        self.dataframe =  pd.DataFrame(data=np.column_stack((y,Xd)), columns=self.columns)
-        #reset X and y
-        self.ExtractDf(omitL)
-        
-    def _GetDerivateX(self):
-        '''Get the derivate (difference) along the columns
-        '''
-        arr = self.dataframe.values
-        columns = list(self.dataframe)
-        #pop the target
-        target = columns.pop(0)
-        #pop the first remaining column
-        columns.pop(0)
-        #rename all columns
-        columns = ['%(i)s-d' %{'i':item} for item in columns]
-        #reinsert the target
-        columns.insert(0, target)
-        self.columns = columns
-        #extract y from the array
-        y = arr[:,0]
-        #Extract the X data array
-        X = arr[:,1:]
-        #Calcculate the derivate
-        Xd = np.diff(X)
-        self.dataframe =  pd.DataFrame(data=np.column_stack((y,Xd)), columns=self.columns)
-        print Xd.shape
-        #Extract x and y, no omitting as this is derived data
-        self.ExtractDf([])
-            
-    def _Explore(self, nrRows=12, shape=True, head=True, descript=True):
+    def Explore(self, nrRows=12, shape=True, head=True, descript=True):
         if shape:
             print(self.dataframe.shape)
         if head:
@@ -145,7 +57,7 @@ class RegressionModels:
         if descript:
             print (self.dataframe.describe())
     
-    def _PlotRegr(self, obs, pred, title, color='black'):
+    def PlotRegr(self, obs, pred, title, color='black'):
         pyplot.xticks(())
         pyplot.yticks(())
         fig, ax = pyplot.subplots()
@@ -209,7 +121,7 @@ class RegressionModels:
         #Print the result message
         print (msg)
         if plot:
-            self._PlotRegr(self.y, predict, title, color='maroon')
+            self.PlotRegr(self.y, predict, title, color='maroon')
 
     def LarsCVFeatureSelectPipeline(self, plot=False):
         '''LarsCV feature selection and regression using the full dataset
@@ -254,7 +166,7 @@ class RegressionModels:
         #Print the result message
         print (msg)
         if plot:
-            self._PlotRegr(self.y, predict, title, color='maroon')
+            self.PlotRegr(self.y, predict, title, color='maroon')
 
     def LarsCVFeatureSelectPipelineCV(self, plot=False):
         '''LarsCV feature selection and regression using the full dataset
@@ -321,7 +233,7 @@ class RegressionModels:
         #Print the result message
         print (msg)
         if plot:
-            self._PlotRegr(self.y, predict, title, color='maroon')
+            self.PlotRegr(self.y, predict, title, color='maroon')
      
     def ReportCVSearch(self, cv, n_top=3):
         results = cv.cv_results_
@@ -395,7 +307,7 @@ class RegressionModels:
                 #Print the result message
                 print (msg)
             if plot:
-                self._PlotRegr(self.y, predict, title, color='maroon')
+                self.PlotRegr(self.y, predict, title, color='maroon')
         return (bestModel,bestCV)
                        
     def ReportModParams(self):
@@ -409,8 +321,8 @@ if __name__ == ('__main__'):
     columns = ['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT', 'MEDV']
     target = 'MEDV'
     regmods = RegressionModels(columns,target)
-    regmods._ImportUrlDataset('https://archive.ics.uci.edu/ml/machine-learning-databases/housing/housing.data')
-    regmods._ExtractDf([])
+    regmods.ImportUrlDataset('https://archive.ics.uci.edu/ml/machine-learning-databases/housing/housing.data')
+    regmods.ExtractDf([])
 
     #LarxCV regression with manual steps
     regmods.LarsCVFeatureSelect()

@@ -17,7 +17,7 @@ tags:
   - macOS
 image: std-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 figure1: machinelearning6_larscv
-figure1: machinelearning6_larscv_cv
+figure2: machinelearning6_larscv_cv
 date: '2018-02-11 15:27'
 comments: true
 share: true
@@ -48,6 +48,146 @@ The complete code is also available [here](https://github.com/karttur/machinelea
 To follow the post you need to a Python environment with numpy, pandas, sklearn (Scikit learn) and matplotlib installed.
 
 ## Module Skeleton
+
+# Module Skeleton
+
+The module skeleton code is under the button.
+
+<button id= "toggle01btn" onclick="hiddencode('toggle01')">Hide/Show module skeleton</button>
+<div id="toggle01" style="display:none">
+{% capture text-capture %}
+{% raw %}
+
+'''
+Created on 9 Feb 2018
+
+@author: thomasgumbricht
+'''
+
+import pandas as pd
+import numpy as np
+
+from sklearn.linear_model import LarsCV, RidgeCV, LassoCV, LassoLarsCV, ElasticNetCV
+from sklearn.linear_model import LinearRegression
+from sklearn import model_selection
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.feature_selection import SelectFromModel
+from sklearn.pipeline import Pipeline
+from sklearn.model_selection import GridSearchCV
+
+
+import matplotlib
+matplotlib.use('TkAgg')
+from matplotlib import pyplot
+
+class RegressionModels:
+    '''Machinelearning using regression models
+    '''
+    def \_\_init\_\_(self, columns,target):
+        '''creates an instance of RegressionModels
+        '''
+        self.columns = columns
+        self.target = target
+        #create an empty dictionary for features to be discarded by each model
+        self.modelDiscardD = {}
+        self.modD = {}
+        self.modelSpearateX = False
+
+    def ImportUrlDataset(self,url):    
+        self.dataframe = pd.read_csv(url, delim_whitespace=True, names=self.columns)
+
+    def SetDf(self,df):
+        self.dataframe = df
+
+    def ExtractDf(self,omitL):
+        #extract the target column as y
+        self.y = self.dataframe[self.target]
+        #appeld the target to the list of features to be omitted
+        omitL.append(self.target)
+        #define the list of data to use
+        self.columnsX = [item for item in self.dataframe.columns if item not in omitL]
+        #extract the data columns as X
+        self.X = self.dataframe[self.columnsX]
+
+    def Explore(self, nrRows=12, shape=True, head=True, descript=True):
+        if shape:
+            print(self.dataframe.shape)
+        if head:
+            print(self.dataframe.head(nrRows))
+        if descript:
+            print (self.dataframe.describe())
+
+    def PlotRegr(self, obs, pred, title, color='black'):
+        pyplot.xticks(())
+        pyplot.yticks(())
+        fig, ax = pyplot.subplots()
+        ax.scatter(obs, pred, edgecolors=(0, 0, 0),  color=color)
+        ax.plot([obs.min(), obs.max()], [obs.min(), obs.max()], 'k--', lw=3)
+        ax.set_xlabel('Observations')
+        ax.set_ylabel('Predictions')
+        pyplot.title(title)
+        pyplot.show()
+
+    def ModelSelectSet(self,modD):
+        self.modelD = {}
+        if 'OLS' in modD:
+            self.modelD['OLS'] = {'mod':LinearRegression(\*\*modD['OLS'])}
+        if 'LarsCV' in modD:
+            self.modelD['LarsCV'] = {'mod':LarsCV(\*\*modD['LarsCV'])}
+        if 'RidgeCV' in modD:
+            self.modelD['RidgeCV'] = {'mod':RidgeCV(\*\*modD['RidgeCV'])}
+        if 'LassoCV' in modD:
+            self.modelD['LassoCV'] = {'mod':LassoCV(\*\*modD['LassoCV'])}
+        if 'LassoLarsCV' in modD:
+            self.modelD['LassoLarsCV'] = {'mod':LassoLarsCV(\*\*modD['LassoLarsCV'])}
+        if 'ElasticNetCV' in modD:
+            self.modelD['ElasticNetCV'] = {'mod':ElasticNetCV(\*\*modD['ElasticNetCV'])}
+
+
+    def ReportCVSearch(self, cv, n_top=3):
+        results = cv.cv_results_
+        for i in range(1, n_top + 1):
+            candidates = np.flatnonzero(results['rank_test_score'] == i)
+            for candidate in candidates:
+                print("    Model with rank: {0}".format(i))
+                print("        Mean validation score: {0:.3f} (std: {1:.3f})".format(
+                      results['mean_test_score'][candidate],
+                      results['std_test_score'][candidate]))
+                print("        Parameters: {0}".format(results['params'][candidate]))
+        print '    cv best estimator:', cv.best_estimator_
+        print '    cv best score:', cv.best_score_
+        print '    cv best params:', cv.best_params_
+        #Create a dictionary from the original X columns and the boolean support list identifying the selected features
+        selectD = dict(zip(self.columnsX, cv.best_estimator_.named_steps['select'].get_support() ))
+        #Extract the names of the selected features to a list
+        featureL = [item for item in selectD if selectD[item]]
+        #Print the selected features
+        print '    Selected features', featureL
+        #For models that expose "coef_", print "coef_"
+        if hasattr(cv.best_estimator_.named_steps['regr'],'coef_'):
+            #Print the coefficiens of the fitted regression
+            print '    coefficients', cv.best_estimator_.named_steps['regr'].coef_    
+
+
+    def ReportModParams(self):
+        print 'Model hyper-parameters:'
+        for m in self.models:
+            #Retrieve the model name and the model itself
+            name,mod = m
+            print ('    name'), (name), (mod.get_params())
+
+if \_\_name__ == ('\_\_main\_\_'):
+    columns = ['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT', 'MEDV']
+    target = 'MEDV'
+    regmods = RegressionModels(columns,target)
+    regmods.ImportUrlDataset('https://archive.ics.uci.edu/ml/machine-learning-databases/housing/housing.data')
+    regmods.ExtractDf([])
+
+
+{% endraw %}
+{% endcapture %}
+{% include widgets/toggle-code.html  toggle-text=text-capture  %}
+</div>
 
 ## Pipeline
 
