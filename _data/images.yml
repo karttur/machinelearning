@@ -1,3 +1,15 @@
+machinelearning6_larscv_cv:
+  file: achinelearning6_larscv_cv.png
+  author: Thomas Gumbricht
+  caption: LarsCV regression after feature selection and cross validation search (Boston housing prices)
+  credit: null
+  source: achinelearning6_larscv_cv.png
+machinelearning6_larscv:
+  file: achinelearning6_larscv.png
+  author: Thomas Gumbricht
+  caption: LarsCV regression after feature selection (Boston housing prices)
+  credit: null
+  source: achinelearning6_larscv.png
 machinelearning5_knnregr_ward-random_tt:
   file: machinelearning5_knnregr_ward-random_tt.png
   author: Thomas Gumbricht
