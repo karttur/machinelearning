@@ -49,21 +49,12 @@ To follow the post you need to a Python environment with numpy, pandas, sklearn 
 
 ## Module Skeleton
 
-# Module Skeleton
-
 The module skeleton code is under the button.
 
 <button id= "toggle01btn" onclick="hiddencode('toggle01')">Hide/Show module skeleton</button>
 <div id="toggle01" style="display:none">
 {% capture text-capture %}
 {% raw %}
-
-'''
-Created on 9 Feb 2018
-
-@author: thomasgumbricht
-'''
-
 import pandas as pd
 import numpy as np
 
@@ -142,32 +133,6 @@ class RegressionModels:
             self.modelD['LassoLarsCV'] = {'mod':LassoLarsCV(\*\*modD['LassoLarsCV'])}
         if 'ElasticNetCV' in modD:
             self.modelD['ElasticNetCV'] = {'mod':ElasticNetCV(\*\*modD['ElasticNetCV'])}
-
-
-    def ReportCVSearch(self, cv, n_top=3):
-        results = cv.cv_results_
-        for i in range(1, n_top + 1):
-            candidates = np.flatnonzero(results['rank_test_score'] == i)
-            for candidate in candidates:
-                print("    Model with rank: {0}".format(i))
-                print("        Mean validation score: {0:.3f} (std: {1:.3f})".format(
-                      results['mean_test_score'][candidate],
-                      results['std_test_score'][candidate]))
-                print("        Parameters: {0}".format(results['params'][candidate]))
-        print '    cv best estimator:', cv.best_estimator_
-        print '    cv best score:', cv.best_score_
-        print '    cv best params:', cv.best_params_
-        #Create a dictionary from the original X columns and the boolean support list identifying the selected features
-        selectD = dict(zip(self.columnsX, cv.best_estimator_.named_steps['select'].get_support() ))
-        #Extract the names of the selected features to a list
-        featureL = [item for item in selectD if selectD[item]]
-        #Print the selected features
-        print '    Selected features', featureL
-        #For models that expose "coef_", print "coef_"
-        if hasattr(cv.best_estimator_.named_steps['regr'],'coef_'):
-            #Print the coefficiens of the fitted regression
-            print '    coefficients', cv.best_estimator_.named_steps['regr'].coef_    
-
 
     def ReportModParams(self):
         print 'Model hyper-parameters:'
