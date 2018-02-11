@@ -1,0 +1,22 @@
+---
+layout: page
+title: Machine learning models
+excerpt: "Applied machine learning modelling for predicting spatial phenomena"
+image: ts-upsl-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+search_omit: true
+---
+
+
+<h1>Blog<h1>
+<ul class="post-list">
+{% for post in site.categories.blog limit:10 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
+
+<h1>Articles<h1>
+<ul class="post-list">
+{% for post in site.categories.machinelearning limit:10 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>

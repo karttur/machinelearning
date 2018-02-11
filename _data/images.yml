@@ -1,0 +1,974 @@
+machinelearning5_knnregr_ward-random_tt:
+  file: machinelearning5_knnregr_ward-random_tt.png
+  author: Thomas Gumbricht
+  caption: Support vector machine regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning5_knnregr_ward-random_tt.png
+machinelearning5_dectreeregr_ward-random_tt:
+  file: machinelearning5_dectreeregr_ward-random_tt.png
+  author: Thomas Gumbricht
+  caption: Support vector machine regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning5_dectreeregr_ward-random_tt.png
+machinelearning5_svr_ward-random_tt:
+  file: machinelearning5_svr_ward-random_tt.png
+  author: Thomas Gumbricht
+  caption: Support vector machine regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning5_svr_ward-random_tt.png
+machinelearning5_randforregr_ward-random_tt:
+  file: machinelearning5_randforregr_ward-random_tt.png
+  author: Thomas Gumbricht
+  caption: Support vector machine regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning5_randforregr_ward-random_tt.png
+machinelearning5_knnregr_pca-random_tt:
+  file: machinelearning5_knnregr_pca-random_tt.png
+  author: Thomas Gumbricht
+  caption: Support vector machine regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning5_knnregr_pca-random_tt.png
+machinelearning5_dectreeregr_pca-random_tt:
+  file: machinelearning5_dectreeregr_pca-random_tt.png
+  author: Thomas Gumbricht
+  caption: Support vector machine regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning5_dectreeregr_pca-random_tt.png
+machinelearning5_svr_pca-random_tt:
+  file: machinelearning5_svr_pca-random_tt.png
+  author: Thomas Gumbricht
+  caption: Support vector machine regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning5_svr_pca-random_tt.png
+machinelearning5_randforregr_pca-random_tt:
+  file: machinelearning5_randforregr_pca-random_tt.png
+  author: Thomas Gumbricht
+  caption: Support vector machine regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning5_randforregr_pca-random_tt.png
+machinelearning4_svr_exhaust_tt:
+  file: machinelearning4_svr_exhaust_tt.png
+  author: Thomas Gumbricht
+  caption: Support vector machine regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning4_svr_exhaust_tt.png
+machinelearning4_svr_exhaust_kfold:
+  file: machinelearning4_svr_exhaust_kfold.png
+  author: Thomas Gumbricht
+  caption: Support vector machine regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning4_svr_exhaust_kfold.png
+machinelearning4_knnregr_exhaust_tt:
+  file: machinelearning4_knnregr_exhaust_tt.png
+  author: Thomas Gumbricht
+  caption: k-nearest neighbors regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning4_knnregr_exhaust_tt.png
+machinelearning4_knnregr_exhaust_kfold:
+  file: machinelearning4_knnregr_exhaust_kfold.png
+  author: Thomas Gumbricht
+  caption: k-nearest neighbors regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning4_knnregr_exhaust_kfold.png
+machinelearning4_dectreeregr_exhaust_tt:
+  file: machinelearning4_dectreeregr_exhaust_tt.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression, prediction of test subset (Boston housing prices) using 5 features
+  credit: null
+  source: machinelearning4_dectreeregr_exhaust_tt.png
+machinelearning4_dectreeregr_exhaust_kfold:
+  file: machinelearning4_dectreeregr_exhaust_kfold.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression, prediction of test subset (Boston housing prices) using 5 features
+  credit: null
+  source: machinelearning4_dectreeregr_exhaust_kfold.png
+machinelearning4_randforregr_exhaust_tt:
+  file: machinelearning4_randforregr_exhaust_tt.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression, prediction of test subset (Boston housing prices) using 5 features
+  credit: null
+  source: machinelearning4_randforregr_exhaust_tt.png
+machinelearning4_randforregr_exhaust_kfold:
+  file: machinelearning4_randforregr_exhaust_kfold.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression, prediction of test subset (Boston housing prices) using 5 features
+  credit: null
+  source: machinelearning4_randforregr_exhaust_kfold.png
+machinelearning4_randforregr_random_tt:
+  file: machinelearning4_randforregr_random_tt.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression, prediction of test subset (Boston housing prices) using 5 features
+  credit: null
+  source: machinelearning4_randforregr_random_tt.png
+machinelearning4_randforregr_random_kfold:
+  file: machinelearning4_randforregr_random_kfold.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression, prediction of test subset (Boston housing prices) using 5 features
+  credit: null
+  source: machinelearning4_randforregr_random_kfold.png
+machinelearning4_svr_random_tt:
+  file: machinelearning4_svr_random_tt.png
+  author: Thomas Gumbricht
+  caption: Support vector machine regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning4_svr_random_tt.png
+machinelearning4_svr_random_kfold:
+  file: machinelearning4_svr_random_kfold.png
+  author: Thomas Gumbricht
+  caption: Support vector machine regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning4_svr_random_kfold.png
+machinelearning4_knnregr_random_tt:
+  file: machinelearning4_knnregr_random_tt.png
+  author: Thomas Gumbricht
+  caption: k-nearest neighbors regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning4_knnregr_random_tt.png
+machinelearning4_knnregr_random_kfold:
+  file: machinelearning4_knnregr_random_kfold.png
+  author: Thomas Gumbricht
+  caption: k-nearest neighbors regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelearning4_knnregr_random_kfold.png
+machinelearning4_dectreeregr_random_tt:
+  file: machinelearning4_dectreeregr_random_tt.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression, prediction of test subset (Boston housing prices) using 5 features
+  credit: null
+  source: machinelearning4_dectreeregr_random_tt.png
+machinelearning4_dectreeregr_random_kfold:
+  file: machinelearning4_dectreeregr_random_kfold.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression, prediction of test subset (Boston housing prices) using 5 features
+  credit: null
+  source: machinelearning4_dectreeregr_random_kfold.png
+
+machinelarning3_RandForRegr-RFE5:
+  file: machinelarning3_RandForRegr-RFE5.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression, prediction of test subset (Boston housing prices) using 5 features
+  credit: null
+  source: machinelarning3_RandForRegr-RFE5.png
+machinelarning3_DecTreeRegr-RFE5:
+  file: machinelarning3_DecTreeRegr-RFE5.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression, prediction of test subset (Boston housing prices) using 5 features
+  credit: null
+  source: mmachinelarning3_DecTreeRegr-RFE5.png
+machinelarning3_OLS-RFE5:
+  file: machinelarning3_OLS-RFE5.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression, prediction of test subset (Boston housing prices) using 5 features
+  credit: null
+  source: machinelarning3_OLS-RFE5.png
+machinelarning3_SVR-RFE5:
+  file: machinelarning3_SVR-RFE5.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression, prediction of test subset (Boston housing prices) using 5 features
+  credit: null
+  source: machinelarning3_SVR-RFE5.png
+machinelarning3_OLS-Kbest2:
+  file: machinelarning3_OLS-Kbest2.png
+  author: Thomas Gumbricht
+  caption: Ordinary Least Square regression, prediction of test subset (Boston housing prices) using 2 features ('RM' and 'LSTAT')
+  credit: null
+  source:
+
+machinelarning3_OLS-2features:
+  file: machinelarning3_OLS-2features.png
+  author: Thomas Gumbricht
+  caption: Ordinary Least Square regression, prediction of test subset (Boston housing prices) using 2 features ('RAD' and 'TAX')
+  credit: null
+  source:
+machinelarning2_OLS:
+  file: machinelarning2_OLS.png
+  author: Thomas Gumbricht
+  caption: Ordinary Least Square regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source:
+machinelarning2_TheilSen:
+  file: machinelarning2_TheilSen.png
+  author: Thomas Gumbricht
+  caption: Theil-Sen regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source:
+machinelarning2_Huber:
+  file: machinelarning2_Huber.png
+  author: Thomas Gumbricht
+  caption: Huber regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source:
+machinelarning2_KnnRegr:
+  file: machinelarning2_KnnRegr.png
+  author: Thomas Gumbricht
+  caption:
+  credit: k-nearest neighbors regression, prediction of test subset (Boston housing prices)
+  source:
+machinelarning2_DecTreeRegr:
+  file: machinelarning2_DecTreeRegr.png
+  author: Thomas Gumbricht
+  caption: Decision Tree regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source:
+machinelarning2_RandForRegr-n10:
+  file: machinelarning2_RandForRegr-n10.png
+  author: Thomas Gumbricht
+  caption: Random Forest regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelarning2_RandForRegr-n10.png
+machinelarning2_RandForRegr-n30:
+  file: machinelarning2_RandForRegr-n30.png
+  author: Thomas Gumbricht
+  caption: Random Forest regression, prediction of test subset (Boston housing prices)
+  credit: null
+  source: machinelarning2_RandForRegr-n30.png
+machinelarning2_svr-default:
+  file: machinelarning2_svr-default.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression
+  credit: null
+  source: machinelarning2_svr-default.png
+machinelarning2_svr-with-params:
+  file: machinelarning2_svr-with-params.png
+  author: Thomas Gumbricht
+  caption: Support Vector Machine regression
+  credit: null
+  source: machinelarning2_svr-with-params.png
+machinelarning_boxwhisker_housing:
+  file: machinelarning_boxwhisker_housing.png
+  author: Thomas Gumbricht
+  caption: Box-whisker plots for data about Boston housing prices
+  credit: null
+  source: machinelarning_boxwhisker_housing.png
+machinelarning_histo_housing:
+  file: machinelarning_histo_housing.png
+  author: Thomas Gumbricht
+  caption: Histograms for data about Boston housing prices
+  credit: null
+  source: null
+machinelarning_linregkfoldmodel:
+  file: machinelarning_linregkfoldmodel.png
+  author: Thomas Gumbricht
+  caption: kFold (n=10) multiple linear regression model (Boston housing prices)
+  credit: null
+  source: null
+machinelarning_linregnaive:
+    file: machinelarning_linregnaive.png
+    author: Thomas Gumbricht
+    caption: Naive multiple linear regression model (Boston housing prices)
+    credit: null
+    source: machinelarning_linregnaive.png
+machinelarning_linregmodel:
+    file: machinelarning_linregmodel.png
+    author: Thomas Gumbricht
+    caption: Training - test linear multiple regression model (Boston housing prices)
+    credit: null
+    source: machinelarning_linregmodel.png
+ts-mdsl-rntwi_RNTWI_id_2001-2016_AS:
+    file: ts-mdsl-rntwi_RNTWI_id_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated median change in rain normalised soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ols-sl-twi-percent_MCD43A4_bwpans_2001-2016_A:
+    file: ols-sl-twi-percent_MCD43A4_bwpans_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated change in rain normalised soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ts-mdsl-rntwi_RNTWI_bwpans_2001-2016_AS:
+    file: ts-mdsl-rntwi_RNTWI_bwpans_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated median change in rain normalised soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+bio-photo:
+    file: bio-photo.jpg
+    author: Thomas Gumbricht
+    caption: bio-photo
+    credit: null
+    source: null
+tropsoilwetnessmap:
+    file: tropsoilwetnessmap.jpg
+    author: Thomas Gumbricht
+    caption: Soil wetness
+    credit: null
+    source: null
+ols-ic-rntwi_RNTWI_bwpans_2001-2016_AS:
+    file: ols-ic-rntwi_RNTWI_bwpans_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated rain normalized soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ols-r2-rntwi_RNTWI_bwpans_2001-2016_AS:
+    file: ols-r2-rntwi_RNTWI_bwpans_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated correlation (r2) for change in rain normalized soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ols-rmse-twi-percent_MCD43A4_id_2001-2016_A:
+    file: ols-rmse-twi-percent_MCD43A4_id_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square model Random Mean Square Error for change in soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ts-losl-twi-percent_MCD43A4_id_2001-2016_A:
+    file: ts-losl-twi-percent_MCD43A4_id_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen lower confidence boundary (95%) for estimated change in soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ts-losl-trmm-3b43v7-precip_3B43_trmm_2001-2016_A:
+    file: ts-losl-trmm-3b43v7-precip_3B43_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen lower confidence boundary (95%) for estimated change in rainfall 2001-2016, global tropics
+    credit: null
+    source: null
+ts-upsl-rntwi_RNTWI_id_2001-2016_AS:
+    file: ts-upsl-rntwi_RNTWI_id_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen upper confidence boundary (95%) for estimated change in rain normalised soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+avg-rntwi_RNTWI_id_2001-2016_AS:
+    file: avg-rntwi_RNTWI_id_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Average rain normalized soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+rntwi-delta_RNTWI_id_2001-2016_mk-z-ts-model:
+    file: rntwi-delta_RNTWI_id_2001-2016_mk-z-ts-model.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated change (absolute) in rain normalised soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+troplandformmap:
+    file: troplandformmap.jpg
+    author: Thomas Gumbricht
+    caption: Landforms
+    credit: null
+    source: null
+ts-ic-twi-percent_MCD43A4_bwpans_2001-2016_A:
+    file: ts-ic-twi-percent_MCD43A4_bwpans_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+twi-percent-delta_MCD43A4_id_2001-2016_mk-z-ts-model:
+    file: twi-percent-delta_MCD43A4_id_2001-2016_mk-z-ts-model.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated change (absolut) in soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ts-upsl-twi-percent_MCD43A4_id_2001-2016_A:
+    file: ts-upsl-twi-percent_MCD43A4_id_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen upper confidence boundary (95%) for estimated change in soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+twi-percent-delta_MCD43A4_oka_2001-2016_mk-z-ts-model:
+    file: twi-percent-delta_MCD43A4_oka_2001-2016_mk-z-ts-model.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated change (absolut) in soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+twi-percent-delta_MCD43A4_bwpans_2001-2016_mk-z-ts-model@p005:
+    file: twi-percent-delta_MCD43A4_bwpans_2001-2016_mk-z-ts-model@p005.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated change (absolut) in soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ts-losl-twi-percent_MCD43A4_oka_2001-2016_A:
+    file: ts-losl-twi-percent_MCD43A4_oka_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen lower confidence boundary (95%) for estimated change in soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+ols-ic-rntwi_RNTWI_oka_2001-2016_AS:
+    file: ols-ic-rntwi_RNTWI_oka_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated rain normalized soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+ts-mdsl-twi-percent_MCD43A4_bwpans_2001-2016_A:
+    file: ts-mdsl-twi-percent_MCD43A4_bwpans_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated median change in soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+mk-z-twi-percent_MCD43A4_java_2001-2016_A:
+    file: mk-z-twi-percent_MCD43A4_java_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Mann-Kendall Z-test for changes in soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+std-trmm-fao-diff-vwb_vwb_trmm_2001-2016_A:
+    file: std-trmm-fao-diff-vwb_vwb_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Standard deviation for vertical water balance 2001-2016, global tropics
+    credit: null
+    source: null
+ts-ic-rntwi_RNTWI_bwpans_2001-2016_AS:
+    file: ts-ic-rntwi_RNTWI_bwpans_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated rain normalised soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ts-ic-rntwi_RNTWI_oka_2001-2016_AS:
+    file: ts-ic-rntwi_RNTWI_oka_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated rain normalised soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+avg-trmm-fao-surplus-vwb_vwb_trmm_2001-2016_A:
+    file: avg-trmm-fao-surplus-vwb_vwb_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Average surplus in vertical water balance (rainfall surplus) 2001-2016, global tropics
+    credit: null
+    source: null
+ts-upsl-twi-percent_MCD43A4_oka_2001-2016_A:
+    file: ts-upsl-twi-percent_MCD43A4_oka_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen upper confidence boundary (95%) for estimated change in soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+rainfall-delta_3B43_trmm_2001-2016_mk-z-ts-model:
+    file: rainfall-delta_3B43_trmm_2001-2016_mk-z-ts-model.jpg
+    author: Thomas Gumbricht
+    caption: Change in rainfall 2001-2016, global tropics
+    credit: null
+    source: null
+std-twi-percent_MCD43A4_bwpans_2001-2016_A:
+    file: std-twi-percent_MCD43A4_bwpans_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Standard deviation for soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+std-twi-percent_MCD43A4_id_2001-2016_A:
+    file: std-twi-percent_MCD43A4_id_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Standard deviation for soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ts-upsl-trmm-3b43v7-precip_3B43_trmm_2001-2016_A:
+    file: ts-upsl-trmm-3b43v7-precip_3B43_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen upper confidence boundary (95%) for estimated change in rainfall 2001-2016, global tropics
+    credit: null
+    source: null
+ols-ic-twi-percent_MCD43A4_bwpans_2001-2016_A:
+    file: ols-ic-twi-percent_MCD43A4_bwpans_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ols-sl-rntwi_RNTWI_bwpans_2001-2016_AS:
+    file: ols-sl-rntwi_RNTWI_bwpans_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated change (slope) in rain normalised soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+avg-rntwi_RNTWI_oka_2001-2016_AS:
+    file: avg-rntwi_RNTWI_oka_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Average rain normalized soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+twi-percent-delta_MCD43A4_bwpans_2001-2016_mk-z-ts-model:
+    file: twi-percent-delta_MCD43A4_bwpans_2001-2016_mk-z-ts-model.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated change (absolut) in soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+mk-z-twi-percent_MCD43A4_bwpans_2001-2016_A:
+    file: mk-z-twi-percent_MCD43A4_bwpans_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Mann-Kendall Z-test for changes in soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ols-r2-rntwi_RNTWI_id_2001-2016_AS:
+    file: ols-r2-rntwi_RNTWI_id_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated correlation (r2) for change in rain normalized soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ols-rmse-rntwi_RNTWI_java_2001-2016_AS:
+    file: ols-rmse-rntwi_RNTWI_java_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square model Random Mean Square Error for change in rain normalised soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+ts-mdsl-twi-percent_MCD43A4_id_2001-2016_A:
+    file: ts-mdsl-twi-percent_MCD43A4_id_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated median change in soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ts-mdsl-rntwi_RNTWI_java_2001-2016_AS:
+    file: ts-mdsl-rntwi_RNTWI_java_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated median change in rain normalised soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+ts-losl-rntwi_RNTWI_bwpans_2001-2016_AS:
+    file: ts-losl-rntwi_RNTWI_bwpans_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen lower confidence boundary (95%) for estimated change in rain normalised soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ols-r2-twi-percent_MCD43A4_bwpans_2001-2016_A:
+    file: ols-r2-twi-percent_MCD43A4_bwpans_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated correlation (r2) for change in soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ols-sl-rntwi_RNTWI_id_2001-2016_AS:
+    file: ols-sl-rntwi_RNTWI_id_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated change (slope) in rain normalised soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ts-losl-twi-percent_MCD43A4_java_2001-2016_A:
+    file: ts-losl-twi-percent_MCD43A4_java_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen lower confidence boundary (95%) for estimated change in soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+rntwi-delta_RNTWI_bwpans_2001-2016_mk-z-ts-model:
+    file: rntwi-delta_RNTWI_bwpans_2001-2016_mk-z-ts-model.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated change (absolute) in rain normalised soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ols-r2-trmm-3b43v7-precip_3B43_trmm_2001-2016_A:
+    file: ols-r2-trmm-3b43v7-precip_3B43_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated correlation (r2) for change in rainfall 2001-2016, global tropics
+    credit: null
+    source: null
+avg-twi-percent_MCD43A4_oka_2001-2016_A:
+    file: avg-twi-percent_MCD43A4_oka_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Average soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+std-rntwi_RNTWI_java_2001-2016_AS:
+    file: std-rntwi_RNTWI_java_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Starndard deviation rain normalized soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+mk-z-trmm-3b43v7-precip_3B43_trmm_2001-2016_A:
+    file: mk-z-trmm-3b43v7-precip_3B43_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Mann-Kendall Z-test for changes in rainfall 2001-2016, global tropics
+    credit: null
+    source: null
+avg-twi-percent_MCD43A4_id_2001-2016_A:
+    file: avg-twi-percent_MCD43A4_id_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Average soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ts-mdsl-rntwi_RNTWI_oka_2001-2016_AS:
+    file: ts-mdsl-rntwi_RNTWI_oka_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated median change in rain normalised soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A:
+    file: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Average rainfall 2001-2016, global tropics
+    credit: null
+    source: null
+ols-ic-rntwi_RNTWI_id_2001-2016_AS:
+    file: ols-ic-rntwi_RNTWI_id_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated rain normalized soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ols-rmse-rntwi_RNTWI_bwpans_2001-2016_AS:
+    file: ols-rmse-rntwi_RNTWI_bwpans_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square model Random Mean Square Error for change in rain normalised soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+avg-twi-percent_MCD43A4_java_2001-2016_A:
+    file: avg-twi-percent_MCD43A4_java_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Average soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+avg-rntwi_RNTWI_java_2001-2016_AS:
+    file: avg-rntwi_RNTWI_java_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Average rain normalized soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+twi-percent-delta_MCD43A4_java_2001-2016_mk-z-ts-model:
+    file: twi-percent-delta_MCD43A4_java_2001-2016_mk-z-ts-model.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated change (absolut) in soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+ts-upsl-rntwi_RNTWI_oka_2001-2016_AS:
+    file: ts-upsl-rntwi_RNTWI_oka_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen upper confidence boundary (95%) for estimated change in rain normalised soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+ts-losl-rntwi_RNTWI_java_2001-2016_AS:
+    file: ts-losl-rntwi_RNTWI_java_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen lower confidence boundary (95%) for estimated change in rain normalised soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+ols-r2-rntwi_RNTWI_oka_2001-2016_AS:
+    file: ols-r2-rntwi_RNTWI_oka_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated correlation (r2) for change in rain normalized soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+ts-mdsl-trmm-3b43v7-precip_3B43_trmm_2001-2016_A:
+    file: ts-mdsl-trmm-3b43v7-precip_3B43_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated median change in rainfall 2001-2016, global tropics
+    credit: null
+    source: null
+ols-rmse-twi-percent_MCD43A4_oka_2001-2016_A:
+    file: ols-rmse-twi-percent_MCD43A4_oka_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square model Random Mean Square Error for change in soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+mk-z-rntwi_RNTWI_bwpans_2001-2016_AS:
+    file: mk-z-rntwi_RNTWI_bwpans_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Mann-Kendall Z-test for changes in rain normalised soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ts-mdsl-twi-percent_MCD43A4_oka_2001-2016_A:
+    file: ts-mdsl-twi-percent_MCD43A4_oka_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated median change in soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+ts-ic-rntwi_RNTWI_java_2001-2016_AS:
+    file: ts-ic-rntwi_RNTWI_java_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated rain normalised soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+ols-ic-twi-percent_MCD43A4_oka_2001-2016_A:
+    file: ols-ic-twi-percent_MCD43A4_oka_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+std-trmm-3b43v7-precip_3B43_trmm_2001-2016_A:
+    file: std-trmm-3b43v7-precip_3B43_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Standard deviation for rainfall 2001-2016, global tropics
+    credit: null
+    source: null
+ts-mdsl-twi-percent_MCD43A4_java_2001-2016_A:
+    file: ts-mdsl-twi-percent_MCD43A4_java_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated median change in soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+ols-r2-twi-percent_MCD43A4_id_2001-2016_A:
+    file: ols-r2-twi-percent_MCD43A4_id_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated correlation (r2) for change in soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+avg-trmm-fao-diff-vwb_vwb_trmm_2001-2016_A:
+    file: avg-trmm-fao-diff-vwb_vwb_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Average vertical water balance 2001-2016, global tropics
+    credit: null
+    source: null
+std-rntwi_RNTWI_oka_2001-2016_AS:
+    file: std-rntwi_RNTWI_oka_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Starndard deviation rain normalized soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+ols-sl-trmm-3b43v7-precip_3B43_trmm_2001-2016_A:
+    file: ols-sl-trmm-3b43v7-precip_3B43_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated change in rainfall 2001-2016, global tropics
+    credit: null
+    source: null
+ols-sl-twi-percent_MCD43A4_oka_2001-2016_A:
+    file: ols-sl-twi-percent_MCD43A4_oka_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated change in rain normalised soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+ts-upsl-rntwi_RNTWI_java_2001-2016_AS:
+    file: ts-upsl-rntwi_RNTWI_java_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen upper confidence boundary (95%) for estimated change in rain normalised soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+ts-losl-rntwi_RNTWI_id_2001-2016_AS:
+    file: ts-losl-rntwi_RNTWI_id_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen lower confidence boundary (95%) for estimated change in rain normalised soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ts-upsl-twi-percent_MCD43A4_bwpans_2001-2016_A:
+    file: ts-upsl-twi-percent_MCD43A4_bwpans_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen upper confidence boundary (95%) for estimated change in soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ols-sl-twi-percent_MCD43A4_java_2001-2016_A:
+    file: ols-sl-twi-percent_MCD43A4_java_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated change in rain normalised soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+twi-percent-delta_MCD43A4_oka_2001-2016_mk-z-ts-model@p005:
+    file: twi-percent-delta_MCD43A4_oka_2001-2016_mk-z-ts-model@p005.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated change (absolut) in soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+ts-losl-twi-percent_MCD43A4_bwpans_2001-2016_A:
+    file: ts-losl-twi-percent_MCD43A4_bwpans_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen lower confidence boundary (95%) for estimated change in soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+std-rntwi_RNTWI_id_2001-2016_AS:
+    file: std-rntwi_RNTWI_id_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Starndard deviation rain normalized soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ols-sl-rntwi_RNTWI_java_2001-2016_AS:
+    file: ols-sl-rntwi_RNTWI_java_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated change (slope) in rain normalised soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+troprunoffmap:
+    file: troprunoffmap.jpg
+    author: Thomas Gumbricht
+    caption: Runoff
+    credit: null
+    source: null
+mk-z-twi-percent_MCD43A4_id_2001-2016_A:
+    file: mk-z-twi-percent_MCD43A4_id_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Mann-Kendall Z-test for changes in soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ols-rmse-twi-percent_MCD43A4_bwpans_2001-2016_A:
+    file: ols-rmse-twi-percent_MCD43A4_bwpans_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square model Random Mean Square Error for change in soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+std-rntwi_RNTWI_bwpans_2001-2016_AS:
+    file: std-rntwi_RNTWI_bwpans_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Starndard deviation rain normalized soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ols-rmse-rntwi_RNTWI_oka_2001-2016_AS:
+    file: ols-rmse-rntwi_RNTWI_oka_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square model Random Mean Square Error for change in rain normalised soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+ols-sl-twi-percent_MCD43A4_id_2001-2016_A:
+    file: ols-sl-twi-percent_MCD43A4_id_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated change in rain normalised soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ols-ic-twi-percent_MCD43A4_java_2001-2016_A:
+    file: ols-ic-twi-percent_MCD43A4_java_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+ols-rmse-twi-percent_MCD43A4_java_2001-2016_A:
+    file: ols-rmse-twi-percent_MCD43A4_java_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square model Random Mean Square Error for change in soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+std-twi-percent_MCD43A4_oka_2001-2016_A:
+    file: std-twi-percent_MCD43A4_oka_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Standard deviation for soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+ts-ic-twi-percent_MCD43A4_java_2001-2016_A:
+    file: ts-ic-twi-percent_MCD43A4_java_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+rainfall-delta_3B43_trmm_2001-2016_mk-z-ts-model@p005:
+    file: rainfall-delta_3B43_trmm_2001-2016_mk-z-ts-model@p005.jpg
+    author: Thomas Gumbricht
+    caption: Change in rainfall 2001-2016, global tropics
+    credit: null
+    source: null
+rntwi-delta_RNTWI_oka_2001-2016_mk-z-ts-model:
+    file: rntwi-delta_RNTWI_oka_2001-2016_mk-z-ts-model.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated change (absolute) in rain normalised soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+avg-twi-percent_MCD43A4_bwpans_2001-2016_A:
+    file: avg-twi-percent_MCD43A4_bwpans_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Average soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ols-r2-twi-percent_MCD43A4_oka_2001-2016_A:
+    file: ols-r2-twi-percent_MCD43A4_oka_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated correlation (r2) for change in soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+ols-rmse-rntwi_RNTWI_id_2001-2016_AS:
+    file: ols-rmse-rntwi_RNTWI_id_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square model Random Mean Square Error for change in rain normalised soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ols-rmse-trmm-3b43v7-precip_3B43_trmm_2001-2016_A:
+    file: ols-rmse-trmm-3b43v7-precip_3B43_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square model Random Mean Square Error for change in rainfall 2001-2016, global tropics
+    credit: null
+    source: null
+ols-r2-rntwi_RNTWI_java_2001-2016_AS:
+    file: ols-r2-rntwi_RNTWI_java_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated correlation (r2) for change in rain normalized soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+ols-r2-twi-percent_MCD43A4_java_2001-2016_A:
+    file: ols-r2-twi-percent_MCD43A4_java_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated correlation (r2) for change in soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+mk-z-rntwi_RNTWI_id_2001-2016_AS:
+    file: mk-z-rntwi_RNTWI_id_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Mann-Kendall Z-test for changes in rain normalised soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ts-upsl-twi-percent_MCD43A4_java_2001-2016_A:
+    file: ts-upsl-twi-percent_MCD43A4_java_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen upper confidence boundary (95%) for estimated change in soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+ols-ic-rntwi_RNTWI_java_2001-2016_AS:
+    file: ols-ic-rntwi_RNTWI_java_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated rain normalized soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+mk-z-rntwi_RNTWI_java_2001-2016_AS:
+    file: mk-z-rntwi_RNTWI_java_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Mann-Kendall Z-test for changes in rain normalised soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+ols-sl-rntwi_RNTWI_oka_2001-2016_AS:
+    file: ols-sl-rntwi_RNTWI_oka_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated change (slope) in rain normalised soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+avg-trmm-fao-deficit-vwb_vwb_trmm_2001-2016_A:
+    file: avg-trmm-fao-deficit-vwb_vwb_trmm_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Average deficit in vertical water balance (rainfall deficit) 2001-2016, global tropics
+    credit: null
+    source: null
+rntwi-delta_RNTWI_java_2001-2016_mk-z-ts-model:
+    file: rntwi-delta_RNTWI_java_2001-2016_mk-z-ts-model.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated change (absolute) in rain normalised soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+mk-z-rntwi_RNTWI_oka_2001-2016_AS:
+    file: mk-z-rntwi_RNTWI_oka_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Mann-Kendall Z-test for changes in rain normalised soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+std-twi-percent_MCD43A4_java_2001-2016_A:
+    file: std-twi-percent_MCD43A4_java_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Standard deviation for soil moisture 2001-2016, Java, Indonesia
+    credit: null
+    source: null
+ts-ic-rntwi_RNTWI_id_2001-2016_AS:
+    file: ts-ic-rntwi_RNTWI_id_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated rain normalised soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ts-losl-rntwi_RNTWI_oka_2001-2016_AS:
+    file: ts-losl-rntwi_RNTWI_oka_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen lower confidence boundary (95%) for estimated change in rain normalised soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+ols-ic-twi-percent_MCD43A4_id_2001-2016_A:
+    file: ols-ic-twi-percent_MCD43A4_id_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Ordinary least square estimated soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+mk-z-twi-percent_MCD43A4_oka_2001-2016_A:
+    file: mk-z-twi-percent_MCD43A4_oka_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Mann-Kendall Z-test for changes in soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+avg-rntwi_RNTWI_bwpans_2001-2016_AS:
+    file: avg-rntwi_RNTWI_bwpans_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Average rain normalized soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ts-ic-twi-percent_MCD43A4_id_2001-2016_A:
+    file: ts-ic-twi-percent_MCD43A4_id_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated soil moisture 2001-2016, Indonesia
+    credit: null
+    source: null
+ts-upsl-rntwi_RNTWI_bwpans_2001-2016_AS:
+    file: ts-upsl-rntwi_RNTWI_bwpans_2001-2016_AS.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen upper confidence boundary (95%) for estimated change in rain normalised soil moisture 2001-2016, Kalahari, Botswana
+    credit: null
+    source: null
+ts-ic-twi-percent_MCD43A4_oka_2001-2016_A:
+    file: ts-ic-twi-percent_MCD43A4_oka_2001-2016_A.jpg
+    author: Thomas Gumbricht
+    caption: Theil-Sen estimated soil moisture 2001-2016, Okavango, Botswana
+    credit: null
+    source: null
+tropwetlandmap:
+    file: tropwetlandmap.jpg
+    author: Thomas Gumbricht
+    caption: Wetlands
+    credit: null
+    source: null

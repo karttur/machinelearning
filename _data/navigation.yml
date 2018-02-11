@@ -1,0 +1,25 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+  include: 'N'
+
+- title: Front
+  url: /
+  include: 'N'
+
+- title: Karttur on GitHub
+  url: /../../../overview/
+  include: 'N'
+
+- title: Articles
+  url: /machinelearning/
+  include: 'N'
+
+- title: Blog
+  url: /blog/
+  include: 'N'
+
+- title: Search
+  url: /search/
+  include: 'N'
