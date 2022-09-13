@@ -3,7 +3,7 @@ layout: post
 title: Machine learning 5 - Dimension reduction
 modified: '2018-02-04 21:29'
 categories: blog
-excerpt: Hyper-parameter tuning of machine learning models in Python
+excerpt: Feature aggregation and dimension reduction using Machine Learning
 tags:
   - rainfall change
   - change
